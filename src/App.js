@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './assets/images/logo.svg';
 import './assets/css/App.css';
+import MiComponente from './components/MiComponente'
 
 function holamundo(nombre){
 
@@ -20,15 +21,12 @@ function App() {
           Hola, soy diego
         </p>
         {holamundo(nombre)}
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <section className="componentes">
+          <MiComponente></MiComponente>
+          <MiComponente></MiComponente>
+        </section>
       </header>
+      
     </div>
   );
 }
